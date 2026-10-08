@@ -127,13 +127,13 @@ with mp_pose.Pose(
 
             status = "NORMAL"
 
-            if sudut < 140:
+            if sudut < 150:
                 status = "MEMBUNGKUK"
 
-            elif selisih_telinga > 0.04:
+            elif selisih_telinga > 0.03:
                 status = "KEPALA MIRING"
 
-            elif jarak_mata > 0.10:
+            elif jarak_mata > 0.08:
                 status = "TERLALU DEKAT"
 
             # ==========================
